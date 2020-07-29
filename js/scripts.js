@@ -1,29 +1,5 @@
 $(document).ready(function () {
-    $('.slider').slick({
-        
-        arrows:false,
-        
-       
-        adaptiveHeight: true
-      });
-      $('.slider-arrow-left').click(function(){
-        $('.slider').slick('slickPrev');
-      })
-      
-      $('.slider-arrow-right').click(function(){
-        $('.slider').slick('slickNext');
-      })
-      $('.trust-slider').slick({
-        arrows:false,
-        adaptiveHeight: true
-      });
-      $('.trust-slider-arrow-left').click(function(){
-        $('.trust-slider').slick('slickPrev');
-      })
-      
-      $('.trust-slider-arrow-right').click(function(){
-        $('.trust-slider').slick('slickNext');
-      })
+    
   //menu burger
   $(".header__wr-burger").on("click", function () {
       if ($(document).width() <= 991) {
@@ -42,45 +18,39 @@ $(document).ready(function () {
       }
   }
   //
-
-  //Start FAQ`s
-  $('.head_faq').on('click', function () {
-      if(!$(this).parent().hasClass('active')){
-          $('.body_faq').slideUp(300);
-          $('.main_faq').removeClass('active');
-          $(this).parent().addClass('active');
-          $(this).parent().find('.body_faq').slideDown(300);
-      }
-      else{
-          $(this).parent().removeClass('active');
-          $(this).parent().find('.body_faq').slideUp(300);
-      }
+  $('.slider2').slick({
+    infinite: true,
+    slidesToShow: 3,
+    prevArrow: $('.sl33'),
+    nextArrow: $('.sl22'),
+    responsive: [
+        {
+            breakpoint: 991, // tablet breakpoint
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 767, // tablet breakpoint
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+   
   });
-  //End FAQ`s
+  
 
-  //Start Modal How Can We Help
-  $('a[href="#how_help"]').on('click', function (e) {
-      e.preventDefault();
-      let service = $(this).find('.special-list__title').html();
-      $('.modal').addClass('active');
-      $('.hidden_service').val(service);
-  });
 
-  $('.close_icon').on('click', function () {
-      $('.modal').removeClass('active');
-  });
+  
 
-  $(document).mouseup(function (e){
-      var div = $(".wr_modal");
-      if (!div.is(e.target)
-          && div.has(e.target).length === 0) {
-          $('.modal').removeClass('active');
-      }
-  });
+  
 
 
 
-  //End Modal How Can We Help
+ 
  
 
 

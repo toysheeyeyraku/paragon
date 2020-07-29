@@ -1,0 +1,85 @@
+.img-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.green-but {
+    max-width: 200px;
+    width: 100%;
+    background: #138A07;
+    box-shadow: 0px 20px 40px rgba(41, 156, 30, 0.2);
+   
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+    min-height: 60px;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+}
+.about-us{
+   
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    width: fit-content;
+    color: #138A07;
+}
+.h {
+    
+    font-weight: bold;
+    font-size: calc(30px + (42 - 30) * ((100vw - 320px) / (1920 - 320)));
+    line-height: 120%;
+    /* or 50px */
+    margin-bottom: 30px;
+    text-transform: capitalize;
+
+    /* black */
+
+    color: #32353F;
+}
+.text {
+    margin-bottom: 30px;
+    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1920 - 320)));
+    line-height: 180%;
+    /* or 32px */
+    
+
+    /* text */
+
+    color: #6D727A;
+}
+.learn-more {
+width: fit-content;
+font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
+line-height: 24px;
+/* identical to box height, or 150% */
+position: relative;
+text-align: center;
+text-transform: capitalize;
+padding-right: 15px;
+/* green */
+
+color: #138A07;
+&::after {
+    content: url('../img/XMLID.svg');
+    position: absolute;
+    top:0px ;
+    right: 0px;
+    width: 8px;
+    height: 8px;
+}
+}

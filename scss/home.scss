@@ -394,7 +394,7 @@
                 }
             }
             .dealer{
-               
+                max-width: 250px;
                 font-weight: bold;
                 @include fluid-font(14 , 18);
                 line-height: 150%;
@@ -426,6 +426,9 @@
             margin: 0 auto;
             
             .arrow {
+                &:hover {
+                    cursor: pointer;
+                }
               width: 40px;
               height: 40px;
               min-width: 40px;
@@ -564,7 +567,7 @@
                 }
             }
             .dealer{
-               max-width: 339px;
+                max-width: 250px;
                margin: 0 auto;
                 font-weight: bold;
                 @include fluid-font(14 , 18);

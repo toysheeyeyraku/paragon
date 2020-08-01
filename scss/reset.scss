@@ -66,4 +66,6 @@ a, p  {
  body  {
 	overflow-x: hidden;
 }
-
+input, textarea ,button {
+	outline: none;
+}

@@ -166,7 +166,7 @@ main{
       font-size: 20px;
       color: #000;
       margin-right: 10px;
-      font-weight: 600;
+      
       box-sizing: border-box;
       text-align: center;
       @media screen and (max-width: $tablet){
@@ -186,6 +186,7 @@ main{
       a:hover {
         color:#1bb90b ;
         transition: color 0.5s;
+       
       }
       .iim {
         height: 24px;
@@ -195,8 +196,8 @@ main{
       }
       a{
         
-        font-weight: bold;
-        font-size: 12px;
+        
+        font-size: 13px;
         line-height: 14px;
         /* identical to box height */
         
@@ -245,7 +246,7 @@ main{
       justify-content: space-between;
       align-items: center;
       @media screen and (max-width: 991px){
-       max-width: 175px;
+       max-width: 140px;
         width: 100%;
         margin: 0 auto;
       }
@@ -254,7 +255,7 @@ main{
       
         
         font-weight: bolder;
-        font-size: 16px;
+        font-size: 13px;
         line-height: 150%;
         /* identical to box height, or 18px */
         

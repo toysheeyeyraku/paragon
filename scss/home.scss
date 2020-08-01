@@ -16,7 +16,7 @@
             .no-stress{
                 margin-bottom: 15px;
                 font-weight: 500;
-                @include fluid-font(12 , 14);
+                @include fluid-font(13 , 14);
                 line-height: 24px;
                 /* identical to box height, or 171% */
         
@@ -56,6 +56,7 @@
 }
 .home-block-2 {
     padding: 70px 0px;
+    background: rgba(242, 244, 247, 0.4);
     @media screen and (max-width:767px) {
         padding: 40px 0px;
     }
@@ -246,13 +247,19 @@
               
             }
             .block {
+                display: block;
                 width: 100%;
                 padding: 30px;
                 box-sizing: border-box;
-                max-width: 300px;
+                
                 background: #FFFFFF;
                 margin-right: 25px;
-                box-shadow: 0px 20px 40px rgba(94, 91, 91, 0.05);
+                transition: box-shadow 0.25s;
+                &:hover {
+                    box-shadow: 0px 20px 40px rgba(94, 91, 91, 0.05);
+                    transition: box-shadow 0.25s;
+                    
+                }
                 border-radius: 5px;
                display: flex;
                justify-content: space-between;
@@ -266,9 +273,10 @@
                     width: 100%;
                     margin: 0 auto;
                 }
-                a {
+                p {
+
                     margin: 0 auto;
-                    
+                        margin-top: 10px;
                         max-width: 250px;
                         font-weight: bold;
                         @include fluid-font(14 , 18);
@@ -482,7 +490,7 @@
                     
                     
                     
-                    @include fluid-font(12 , 16);
+                    @include fluid-font(13 , 16);
                     line-height: 180%;
                     /* or 29px */
                     
@@ -508,7 +516,7 @@
                 }
                 .when {
                     
-                    font-size: 12px;
+                    font-size: 13px;
                     line-height: 14px;
                     /* identical to box height */
 
@@ -671,8 +679,8 @@ footer {
              line-height: 250%;
  
              /* Gray 3 */
- 
-             color: #828282;
+                opacity: 0.7;
+             color: #ffffff;
              }
         }
         .last {
@@ -692,7 +700,7 @@ footer {
                 padding-bottom: 20px;
                 .p {
                     
-                    font-size: 12px;
+                    font-size: 13px;
                     line-height: 180%;
                     /* identical to box height, or 22px */
 
@@ -731,7 +739,8 @@ footer {
                     box-sizing: border-box;
                     height: 50px;
 
-                    font-size: 12px;
+                    &::placeholder {
+                        font-size: 13px;
                     line-height: 240%;
                     /* identical to box height, or 29px */
 
@@ -739,6 +748,9 @@ footer {
                     /* text */
 
                     color: #6D727A;
+                    }
+                    font-size: 16px;
+                    color: #000000;
                 }
                  button{
                     border: none;
@@ -748,7 +760,7 @@ footer {
                     
 
                     font-weight: bold;
-                    font-size: 12px;
+                    font-size: 13px;
                    
                     /* identical to box height, or 200% */
 
@@ -799,4 +811,17 @@ footer {
         }
         
     }
+}
+.home-block-5-revrsed {
+    @media screen and (max-width:991px) {
+        .ijh {
+            grid-row: 2;
+        }
+        .first {
+            grid-row: 1;
+        }
+    }
+}
+.home-blok-5-bg {
+    background-color: #FAFBFC;;
 }

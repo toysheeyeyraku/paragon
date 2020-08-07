@@ -112,3 +112,62 @@ color: #138A07;
 
     color: #32353F;
 }
+.history {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+     a{
+         position: relative;
+         margin-right: 25px;
+         padding-right: 25px;
+       
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 140%;
+            /* identical to box height, or 17px */
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+
+            /* black */
+
+            color: #32353F;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0px;
+                right:0px;
+                width: 2px;
+                height: 100%;
+                background-color: #138A07;
+            }
+     }
+     a:last-child {
+         
+        color: #138A07;;
+        margin-right: 0px;
+        &::after {
+            content: none;
+        }
+     }
+}
+
+.stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    
+    display: inline-block;
+    font-size: 20px;
+    font-family: Times; // make sure ★ appears correctly
+    line-height: 1;
+    
+    &::before {
+      content: '★★★★★'; /*you can paste base64 image code here to add any icon*/
+      letter-spacing: 3px;
+      background: linear-gradient(90deg, #FFC742 var(--percent), #fafafa var(--percent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
